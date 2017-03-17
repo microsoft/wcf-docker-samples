@@ -9,6 +9,8 @@ WORKDIR WCFTCPSelfHost
 EXPOSE 82
 EXPOSE 81
 
-# The final instruction copies the site you published earlier into the container.
+# Copies the site you published earlier into the container.
 COPY WCFTCPSelfHost/ .
+
+# start WCFTCPSElfHost service process in container as entrypoint process.
 ENTRYPOINT .\bin\Release\WCFTCPSelfHost.exe
