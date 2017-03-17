@@ -5,7 +5,7 @@ FROM microsoft/wcf
 # Next, this Dockerfile creates a directory for your application
 WORKDIR WCFTCPSelfHost
 
-# This instruction tells the container to listen on port 83. 
+# This instruction tells the container to listen on port 81, 82. 
 EXPOSE 82
 EXPOSE 81
 
