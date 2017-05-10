@@ -13,14 +13,13 @@ Navigate to the sample on your machine at the command prompt or terminal. Make s
 **Build and run Docker image**
 
  - IIS Hosted WCF service
-- Open a powershell window
-- Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WcfBasicIISHost
-- Build the Docker image: "docker build -t vmwcfbasichttpiishost ."
-- Run the IIS hosted WCF service in the container: "docker run -d -p 83:83 --name wcfbasichttpiishost vmwcfbasichttpiishost"
-
+ -- Open a powershell window
+ -- Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WcfBasicIISHost
+ -- Build the Docker image: "docker build -t vmwcfbasichttpiishost ."
+ -- Run the IIS hosted WCF service in the container: "docker run -d -p 83:83 --name wcfbasichttpiishost vmwcfbasichttpiishost"
  - Selfhosted WCF service
-- Open a powershell window
-- Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WcfBasicHttpSelfHost
-- Build the Docker image: "docker build -t vmwcfbasichttpselfhost ."
-- Run the selfhosted WCF service in the container: "docker run -a stdin -a stdout -i -p 83:83 --name wcfbasichttpselfhost vmwcfbasichttpselfhost"
+ -- Open a powershell window
+ -- Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WcfBasicHttpSelfHost
+ -- Build the Docker image: "docker build -t vmwcfbasichttpselfhost ."
+ -- Run the selfhosted WCF service in the container: "docker run -a stdin -a stdout -i -p 83:83 --name wcfbasichttpselfhost vmwcfbasichttpselfhost"
 Note, the selfhosted service host process needs to be run in froneground mode in order to hold the docker container alive while the host process is running.
