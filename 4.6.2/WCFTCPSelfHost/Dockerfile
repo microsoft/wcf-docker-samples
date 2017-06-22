@@ -1,6 +1,5 @@
-# Begin IIS
-
-FROM microsoft/wcf
+# install WCF basic docker image
+FROM microsoft/wcf:4.6.2
 
 # Next, this Dockerfile creates a directory for your application
 WORKDIR WCFTCPSelfHost
