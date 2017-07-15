@@ -1,9 +1,9 @@
 # install WCF basic docker image
 
-FROM microsoft/wcf
+FROM microsoft/wcf:4.6.2
 
 # Next, this Dockerfile creates a directory for your application
-RUN mkdir C:\WcfServiceTest
+WORKDIR C:\WcfServiceTest
 
 # configure the new site in IIS.
 RUN powershell -NoProfile -Command \
