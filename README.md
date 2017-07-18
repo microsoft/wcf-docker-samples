@@ -39,6 +39,3 @@ Navigate to the sample on your machine at the command prompt or terminal. Make s
   - Copy the container ip address and paste into your browser with the correct port.
 
 Note, the selfhosted service host process needs to be run in froneground mode in order to hold the docker container alive while the host process is running.
-
-
-
