@@ -26,12 +26,12 @@ Navigate to the sample on your machine at the command prompt or terminal. Make s
    - Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WcfBasicHttpSelfHost
    - Build the Docker image: "docker build -t wcfbasichttpselfhost ."
    - Run the selfhosted WCF service in the container: "docker run -a stdin -a stdout -i -p 83:83 --name wcfbasichttpselfhost wcfbasichttpselfhost"
- - Selfhosted WCF service using TCP
-   - Open the 4.6.2/WcfBasicIISHost/WcfServiceTest.sln in Visual Studio and build the Release project locally.
-   - Open a powershell window
-   - Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WCFTCPSelfHost
-   - Build the Docker image: "docker build -t wcftcpselfhost ."
-   - Run the selfhosted WCF service in the container: "docker run -a stdin -a stdout -i -p 83:83 --name wcftcpselfhost wcftcpselfhost"
+   - Selfhosted WCF service using TCP
+     - Open the 4.6.2/WcfBasicIISHost/WcfServiceTest.sln in Visual Studio and build the Release project locally.
+     - Open a powershell window
+     - Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WCFTCPSelfHost
+     - Build the Docker image: "docker build -t wcftcpselfhost ."
+     - Run the selfhosted WCF service in the container: "docker run -a stdin -a stdout -i -p 83:83 --name wcftcpselfhost wcftcpselfhost"
 
 **View sample running in the browser**
 - There is currently a bug that affects how Windows 10 talks to Containers via "NAT" (Network Address Translation). It is fixed by the Windows Creator Update. If you have an earlier version of Windows 10 you must hit the IP of the container directly. You can get the IP address of your container with the following steps:
