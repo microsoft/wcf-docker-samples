@@ -3,7 +3,7 @@
 FROM microsoft/wcf:4.6.2
 
 # Next, this Dockerfile creates a directory for your application
-WORKDIR C:\WcfServiceTest
+WORKDIR WcfServiceTest
 
 # configure the new site in IIS.
 RUN powershell -NoProfile -Command \
@@ -14,4 +14,4 @@ RUN powershell -NoProfile -Command \
 EXPOSE 83
 
 # The final instruction copies the site you published earlier into the container.
-COPY WcfServiceTest/ /WcfServiceTest
+COPY WcfServiceTest/ .
