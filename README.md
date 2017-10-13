@@ -26,7 +26,7 @@ Navigate to the sample on your machine at the command prompt or terminal. Make s
    - Build the Docker image: "docker build -t wcfbasichttpselfhost ."
    - Run the selfhosted WCF service in the container: "docker run -a stdin -a stdout -i -p 83:83 --name wcfbasichttpselfhost wcfbasichttpselfhost"
  - Selfhosted WCF service using TCP
-     - Open the 4.6.2/WcfBasicIISHost/WcfServiceTest.sln in Visual Studio and build the Release project locally.
+     - Open the 4.6.2/WCFTCPSelfHost/WCFTCPSelfHost.sln in Visual Studio and build the Release project locally.
      - Open a powershell window
      - Go to the sample directory that contains the dockerfile for that sample, such as 4.6.2/WCFTCPSelfHost
      - Build the Docker image: "docker build -t wcftcpselfhost ."
